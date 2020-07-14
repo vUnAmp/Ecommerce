@@ -1,0 +1,145 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  font: 300 1.6rem Helvetica;
+  height: 100vh;
+  margin: 0;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+.header {
+  grid-area: header;
+  background-color: blueviolet;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.brand button {
+  background: none;
+  color: #fff;
+  font-size: 3rem;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.brand a {
+  font: 500 2.2rem fantasy;
+}
+nav {
+  padding-right: 20px;
+}
+nav a {
+  padding: 10px;
+  font-size: 1.8rem;
+}
+nav a:hover {
+  color: rgb(238, 192, 192);
+}
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  padding-top: 5rem;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: gainsboro;
+
+  width: 30rem;
+  height: 100%;
+  transform: translateX(-32rem);
+}
+.sidebar-open {
+  transform: translateX(0);
+}
+.sidebar-close-button {
+  position: fixed;
+  top : 1rem;
+  right : 1rem;
+  
+  border-radius : 50%;
+  outline: none;
+  width: 3rem;
+  height : 3rem;
+  font-size: 2rem;
+  border : 0.1rem #999 solid;
+  cursor : pointer;
+
+  
+  
+}
+.sidebar a {
+  color: blue;
+  margin-bottom: 2rem;
+}
+.main {
+  grid-area: main;
+}
+.content {
+  display: flex;
+  justify-content: center;
+}
+.products {
+  max-width: 1280px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.products li {
+  flex: 0 1 34rem;
+  margin: 1rem;
+
+  height: 50rem;
+  border-bottom: 0.1rem #999 solid;
+}
+.product-name a {
+  color: rgb(20, 122, 255);
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.product-name a:hover {
+  color: deeppink;
+}
+.product-image {
+  max-height: 34rem;
+  max-width: 34rem;
+}
+.price {
+  font-weight: 600;
+}
+.product-rating {
+  margin-bottom: 1rem;
+}
+.footer {
+  grid-area: footer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

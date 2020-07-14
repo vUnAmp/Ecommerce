@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>We love tech</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <div class="brand">
+          <button onclick="openMenu()">
+            &#9776;
+          </button>
+          <a href="index.html">WeLoveTech</a>
+        </div>
+        <nav class="header-link">
+          <a href="signin.html">Sign In</a>
+          <a href="cart.html">Cart</a>
+        </nav>
+      </header>
+      <aside class="sidebar">
+        <h3>Productions Cagatories</h3>
+        <a href="product-phones">Phones</a>
+        <a href="product-accessories">Accessories</a>
+        <button class="sidebar-close-button" onclick="closeMenu()">x</button>
+      </aside>
+      <main class="main">
+        <div class="content">
+          <ul class="products">
+            <li>
+              <div class="product">
+                <img
+                  class="product-image"
+                  src="image/iphonexs.jpg"
+                  alt="Iphone"
+                />
+                <div class="product-name">
+                  <a href="product.html">Iphone Xs</a>
+                </div>
+                <div class="product-brand">Apple</div>
+                <div class="price">$800</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <li>
+              <div class="product">
+                <img
+                  class="product-image"
+                  src="image/iphonexs.jpg"
+                  alt="Iphone"
+                />
+                <div class="product-name">
+                  <a href="product.html">Iphone Xs</a>
+                </div>
+                <div class="product-brand">Apple</div>
+                <div class="price">$800</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <li>
+              <div class="product">
+                <img
+                  class="product-image"
+                  src="image/iphonexs.jpg"
+                  alt="Iphone"
+                />
+                <div class="product-name">
+                  <a href="product.html">Iphone Xs</a>
+                </div>
+                <div class="product-brand">Apple</div>
+                <div class="price">$800</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <li>
+              <div class="product">
+                <img
+                  class="product-image"
+                  src="image/iphonexs.jpg"
+                  alt="Iphone"
+                />
+                <div class="product-name">
+                  <a href="product.html">Iphone Xs</a>
+                </div>
+                <div class="product-brand">Apple</div>
+                <div class="price">$800</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <li>
+              <div class="product">
+                <img
+                  class="product-image"
+                  src="image/iphonexs.jpg"
+                  alt="Iphone"
+                />
+                <div class="product-name">
+                  <a href="product.html">Iphone Xs</a>
+                </div>
+                <div class="product-brand">Apple</div>
+                <div class="price">$800</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <li>
+              <div class="product">
+                <img
+                  class="product-image"
+                  src="image/iphonexs.jpg"
+                  alt="Iphone"
+                />
+                <div class="product-name">
+                  <a href="product.html">Iphone Xs</a>
+                </div>
+                <div class="product-brand">Apple</div>
+                <div class="price">$800</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </main>
+      <footer class="footer">
+        We love tech @2020
+      </footer>
+    </div>
+    <script>
+      function openMenu() {
+        document.querySelector(".sidebar").classList.add("sidebar-open");
+ 
+      }
+      function closeMenu() {
+        document.querySelector(".sidebar").classList.remove("sidebar-open");
+      }
+    </script>
+  </body>
+</html>
